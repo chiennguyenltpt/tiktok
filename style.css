@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.nav {
+    width: 100%;
+    height: 60px;
+    color: rgb(22, 44, 35);
+    direction: ltr;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-bottom: 1px #00000045 solid;
+    position: fixed;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10000;
+    background-color:  rgba(255, 255, 255, 1);;
+}
+.logo img{
+    width: 120px;
+    height: 42px;
+    object-fit: cover;
+    
+    position: relative;
+    margin-top: 10px;
+    align-items: center;
+    
+    
+}
+.nav-input-search{
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.nav-input-search input{
+    width:25vw;
+    height: 65%;
+    margin-right: 100px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset 0px 0px 2px black; 
+    outline: none;
+    padding-left: 20px;
+}
+.bnt-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right:150px;
+}
+.bnt-nav button{
+    height: 75%;
+    width: 10vw;
+    margin-right: 5px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid rgb(43, 41, 41 ,0.3);
+    
+    cursor: pointer;
+    right: 55px;
+    
+}
+.bnt-nav-upload:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.bnt-nav-login{
+    background-color: rgb(245, 54, 54, .8)
+}
+.bnt-nav i {
+    height: 100%;
+    margin-top:20px ;
+    position: relative;
+    font-size: 40px;
+    opacity: .7;
+    
+}
+
+/* main */
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+    
+    top: 90px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tagbar {
+    position: fixed;
+    height: 100vh;
+    width: 25%;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: block;
+    left: 6%;
+    top: 40px;
+    scrollbar-width: thin;
+    
+}
+.tag-home {
+    width: 100%;
+    height: 140px;
+   
+    color: black;
+    position: relative;
+    border-bottom: 1px rgb(24, 23, 23,0.2) solid ;
+    
+       
+}
+.tag-home ul {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.tag-home li {
+    font-size: 25px;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.tag-home i {
+    left: 15px;
+    position: absolute;
+}
+
+.tagbar-login {
+    width: 100%;
+    height: 160px;
+    display: block;
+    border-bottom:1px rgb(47, 44, 44,.3) solid ;
+}
+
+.tagbar-login span {
+    margin-left: 25px;
+    position: relative;
+    top: 20px;
+    opacity: .6 ;
+    display: flex;
+}
+.tagbar-login button {
+    position: relative; 
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+    height: 50px;
+    border:1px rgba(180, 12, 12, 0.4)  solid;
+    border-radius: 7px;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tagbar::-webkit-scrollbar{
+    width: 6px;
+    
+}
+.tagbar::-webkit-scrollbar-track{
+    background-color: white;
+    /* width: thin; */
+}
+.tagbar::-webkit-scrollbar-thumb{
+    background-color: rgb(244, 229, 229,.3);
+    border-radius:15px ;
+}
+
+
+.recommand-account{
+    width: 100%;
+    min-height: 300px;
+    max-height: 800px;
+    display: flex; 
+    flex-direction: column;
+    border-bottom: 1px rgb(33, 32, 29,.4) solid;
+}
+.recommand-account h3 {
+    left: 25px;
+    top: 10px;
+    position: relative;
+    padding-bottom: 20px;
+    opacity: .5;
+    
+}
+.user {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.user h2{
+    color: rgb(11, 7, 7);
+    position: relative;
+    top: 5px;
+    left: 90px;
+}
+.user small {
+    color: rgb(7, 2, 2);
+    position: relative;
+    top: 3px;
+    left: 90px;
+}
+.user img {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    margin-top: 7px;
+}
+.user i {
+    color: rgb(36, 149, 220);
+    font-size: 18px;
+    
+}
+
+.discover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 0px;
+    position: relative;
+    border-bottom: 1px black solid;
+}
+.text-discover{
+    left: 20px;
+    top :20px;
+    position: relative;
+    opacity: .3;
+}
+    
+    
+
+.link-discover {
+    min-width: 20%;
+    max-width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px black solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+   
+}
+.link-discover a {
+    padding-left:10px ;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.show-link-discover {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    min-height: 200px;
+    border-bottom: 1px rgb(33, 32, 29,.4) solid;
+    display: block;
+    position: absolute;
+
+}
+.tiktok-href {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    
+    position: relative;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.tiktok-href a {
+    text-decoration: none;
+}
+.tiktok-href a:hover{
+    text-decoration: underline;
+}
+    
+
+
+/* content */
+.content{
+    width: 65%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 110vh;
+    background-color: aqua;
+}
+
+.maintain {
+    width: 75%;
+    background-color: rgb(5, 6, 6);
+    height: 600px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
